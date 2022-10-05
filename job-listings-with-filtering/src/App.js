@@ -8,9 +8,11 @@ import data from './mock/data.json';
 
 function App() {
     const dispatch = useDispatch();
+
     useEffect(() => {
         dispatch(addPositions(data));
     });
+
     return (
         <>
             <TheHeader />
