@@ -5,10 +5,10 @@ import { addFilter } from 'store/filters/filter-actions';
 import { selectFilters } from 'store/filters/filter-selector';
 
 const JobList = () => {
-    const dispatch = useDispatch();cv 
+    const dispatch = useDispatch();
     const currentFilters = useSelector(selectFilters);
     const positions = useSelector((state) => {
-        return selectVisiblePositions(state, currentFilters);
+        selectVisiblePositions(state, currentFilters);
     });
 
     const handleAddFilter = (filter) => {
