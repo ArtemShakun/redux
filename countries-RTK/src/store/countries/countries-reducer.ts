@@ -1,5 +1,11 @@
 import { SET_COUNTRIES, SET_ERROR, SET_LADING } from './countries-actions';
 
+type initialState = {
+    status: string;
+    error: string | null;
+    list: Array<string>;
+};
+
 const initialState = {
     status: 'idle', // lading, received, rejected
     error: null,
